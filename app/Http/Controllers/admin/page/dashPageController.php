@@ -4,6 +4,7 @@ namespace App\Http\Controllers\admin\page;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\admin\Page;
 
 class dashPageController extends Controller
 {
@@ -14,7 +15,9 @@ class dashPageController extends Controller
      */
     public function index()
     {
-        //
+        $page_title = 'صفحات';
+        $page_description = 'لیست صفحات شما!';
+        return view('dashboard.dpages.pages',compact('page_title','page_description'));
     }
 
     /**
@@ -81,5 +84,11 @@ class dashPageController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function search(Request $request){
+        $pageTitle = $request->pageTitle;
+
+        
     }
 }

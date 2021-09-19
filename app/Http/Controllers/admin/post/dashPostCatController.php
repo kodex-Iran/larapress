@@ -14,7 +14,6 @@ class dashPostCatController extends Controller
      */
     public function index()
     {
-        //
     }
 
     /**

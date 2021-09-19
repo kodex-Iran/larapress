@@ -51,6 +51,11 @@ composer update
 - 4- 
 
 ```
+npm install
+```
+
+- 4-1
+```
 npm update
 ```
 
@@ -92,6 +97,7 @@ cp laravel-hellpers/Jdate.php vendor/laravel/framework/src/Illuminate/Foundation
 cp laravel-hellpers/googleTranslate.php vendor/laravel/framework/src/Illuminate/Foundation/googleTranslate.php
 
 ```
+
 - 11-
 
 ```

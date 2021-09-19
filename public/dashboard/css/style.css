@@ -18,6 +18,7 @@
     --bg-hover-light:#494848;
     --bg-active-dark:#1f1502;
     --bg-active-submenu:#402b04;
+    --base-radius:5px;
 }
 [lang=fa]{
     direction: rtl!important;
@@ -423,6 +424,21 @@ select option:hover,select option:focus,select option:active,select option:focus
 .dropdown-menu-end[data-mdb-popper]{
     right: auto!important;
     left: 0!important;
+}
+.bg-light-2{
+    background: var(--bg-gold);
+    color: white;
+    border: 1px solid var(--bg-DarkGold);
+}
+.bg-light-2:hover{
+    background: var(--bg-DarkGold);
+    color: white;
+    border: 1px solid var(--bg-gold);
+    text-decoration: underline;
+}
+.alert-no-pop{
+    border: 1px solid var(--bg-gold);
+    border-radius: var(--base-radius);
 }
 /*.mdtp__digit.rotate-120 {*/
 /*    transform: rotate(300deg)!important;*/
